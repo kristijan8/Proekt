@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Vnesete ID na proizvodot sto sakate da go kupite: <input type="text" id="idproizvod"></p>
+    <p>Vnesete kolicina: <input type="number" id="kolkuId" min="0" step="1" value="0"></p>
+    <p>Na koja adresa sakate da vi ja dostaavime narackata: <input type="text" id="adresaId"></p>
+    <button id="kupiId" onclick="kupiFunc()">Kupi</button>
+</body>
+<script>
+    function kupiFunc()
+    {
+        let idslika=document.getElementById("idproizvod");
+        let tekst=idslika.value;
+        let pom=false;
+        let aderesaId=document.getElementById("adresaId");
+        let kolkuId=document.getElementById("kolkuId");
+        if(tekst=="patikiKosarka"||tekst=="patikiZaFudbal"||tekst=="konduri1"||tekst=="konduri2"||tekst=="cizma1"||tekst=="cizma2")
+        {
+            pom=true;
+        }
+        if(pom==false)
+            window.alert("Nema takov proizvod. Vneseta nov id");
+        else if(kolkuId.value==0)
+            window.alert("Vnesi kolku proizvodi");
+        else
+        {
+            
+            window.alert(kolkuId.value+" proizvodi od tipot "+tekst+" kje vi bidat isprateni na adresa: "+aderesaId.value);
+            window.location.href="index.html";
+        }
+    }
+</script>
+</html>
