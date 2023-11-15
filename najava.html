@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styleNajava.css">
+    <script src="backend2.js""></script>
+
     
 
 </head>
@@ -12,17 +14,11 @@
     <h1>Prodavnica za obuvki-Najava</h1>
 
     
-    <p>Vnesi korisnicko ime: <input type="text" id="kid" placeholder="Vaseto ime"></p>
+    <p>Vnesi korisnicko ime: <input type="text" id="kid" placeholder="Vaseto ime" oninput="func1()"></p>
     <p>Vnesi broj na platezna karticka: <input type="text" id="pid" placeholder="Vasata karticka"></p>
     
     <p><button id="vnes" onclick="func()">Zavrsi</button></p>
-    <script>
-        function func()
-        {
-            window.alert("Uspesno vneseni podatoci");
-            window.location.href="index.html";
-        }
-    </script>
+    
 
     
     
