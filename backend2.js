@@ -5,7 +5,7 @@
                 let nameId=document.getElementById("kid");                
                 let name=nameId.value;
                 
-                // Data to be stored
+                
                 
             
                 // Save data to localStorage
