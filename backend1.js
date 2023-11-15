@@ -76,7 +76,6 @@ function dodajCizmi()
     let pomosna1="lajk3_"+String(kolkuKonduri);
     let pomosna2="kolku3_"+String(kolkuKonduri);
     let pom3="Vasiot_komentar_za_proizvodot";
-
     let novDiv=document.createElement("div");
     novDiv.innerHTML="<div>"+
     "<p><img src="+novaSlika+"></p>"+
